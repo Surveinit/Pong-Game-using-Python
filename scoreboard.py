@@ -7,6 +7,7 @@ FONT = ("Courier", 30, "normal")
 class Score(Turtle):
 
     def __init__(self):
+        # Initializes the class and sets the initial score.
         super().__init__()
         self.penup()
         self.hideturtle()
@@ -17,6 +18,7 @@ class Score(Turtle):
         self.write(f"{self.l_score} - {self.r_score}", align=ALIGNMENT, font=FONT)
 
     def update_scoreboard(self):
+        # Updates the score on the scoreboard by writing the new score on top of the old one.
         self.color("white")
         self.write(f"{self.l_score} - {self.r_score}", align=ALIGNMENT, font=FONT)
 
